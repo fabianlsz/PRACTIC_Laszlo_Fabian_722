@@ -62,4 +62,11 @@ public class ArenaService {
             System.err.println("Eroare la scrierea fisierului tributes_sorted.txt: " + e.getMessage());
         }
     }
+
+    //cerinta 5
+    public List<Ereignis> getFirstNEvents(int n) {
+        return eventRepo.findAll().stream()
+                .limit(n)
+                .collect(Collectors.toList());
+    }
 }

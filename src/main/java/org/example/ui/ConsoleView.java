@@ -45,9 +45,9 @@ public class ConsoleView {
                 case "4":
                     uiSaveSortedToFile();
                     break;
-//                case "5":
-//                    uiShowComputedPoints();
-//                    break;
+                case "5":
+                    uiShowComputedPoints();
+                    break;
 //                case "6":
 //                    uiShowRanking();
 //                    break;
@@ -102,4 +102,17 @@ public class ConsoleView {
         service.saveSortedTributes();
         System.out.println("Success! Tributes saved to 'tributes_sorted.txt'.");
     }
+
+    private void uiShowComputedPoints() {
+        System.out.println("\n--- Computed Points (First 5 Events) ---");
+        List<Ereignis> events = service.getFirstNEvents(5);
+        for (Ereignis e : events) {
+            System.out.println("Event ID: " + e.getId() +
+                    " | Raw Points: " + e.getPoints() +
+                    " | Computed: " + e.getComputedPoints());
+        }
+    }
+
+
+
 }
