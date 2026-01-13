@@ -105,5 +105,18 @@ public class ArenaService {
     }
 
     //cerinta 7 generare raport arena_report.txt
+    public void generateArenaReport() {
+        //numaram evenimentele grupate dupa type
+        Map<EventTyp, Long> counts = eventRepo.findAll().stream()
+                .collect(Collectors.groupingBy(Ereignis::getType, Collectors.counting()));
 
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("arena_report.txt"))) {
+            for (Map.Entry<EventTyp, Long> entry : counts.entrySet()) {
+                writer.write(entry.getKey() + " -> " + entry.getValue());
+                writer.newLine();
+            }
+        } catch (IOException e) {
+            System.err.println("Eroare la generarea raportului: " + e.getMessage());
+        }
+    }
 }

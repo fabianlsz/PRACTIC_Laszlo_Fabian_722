@@ -51,9 +51,9 @@ public class ConsoleView {
                 case "6":
                     uiShowRanking();
                     break;
-//                case "7":
-//                    uiGenerateReport();
-//                    break;
+                case "7":
+                    uiGenerateReport();
+                    break;
                 case "0":
                     System.out.println("Exiting Application!");
                     return;
@@ -121,6 +121,12 @@ public class ConsoleView {
             System.out.println(rank + ". " + entry.getKey().getName() + " -> " + entry.getValue() + " points");
             rank++;
         }
+    }
+
+    private void uiGenerateReport() {
+        System.out.println("\n--- Generating Report ---");
+        service.generateArenaReport();
+        System.out.println("Success! Report saved to 'arena_report.txt'.");
     }
 
 }
