@@ -35,11 +35,18 @@ public class ArenaService {
         return giftRepo.findAll().size();
     }
 
-    // filtrare district si status
+    // cerinta 2 filtrare district si status
     public List<Tribut> filterTributes(int district) {
         return tributeRepo.findAll().stream()
                 .filter(t -> t.getDistrict() == district && t.getStatus() == Status.ALIVE)
                 .collect(Collectors.toList());
     }
 
+    //cerinta 3 sortare skill desc nume asc
+    public List<Tribut> getSortedTributes() {
+        return tributeRepo.findAll().stream()
+                .sorted(Comparator.comparingInt(Tribut::getSkillLevel).reversed()
+                        .thenComparing(Tribut::getName))
+                .collect(Collectors.toList());
+    }
 }

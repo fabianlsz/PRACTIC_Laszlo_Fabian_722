@@ -39,9 +39,9 @@ public class ConsoleView {
                 case "2":
                     uiFilterByDistrict();
                     break;
-//                case "3":
-//                    uiShowSortedTributes();
-//                    break;
+                case "3":
+                    uiShowSortedTributes();
+                    break;
 //                case "4":
 //                    uiSaveSortedToFile();
 //                    break;
@@ -90,6 +90,11 @@ public class ConsoleView {
         } catch (NumberFormatException e) {
             System.out.println("Invalid input! Please enter a valid number.");
         }
+    }
+
+    private void uiShowSortedTributes() {
+        System.out.println("\n--- Tributes Sorted (Skill DESC, Name ASC) ---");
+        service.getSortedTributes().forEach(System.out::println);
     }
 
 }
