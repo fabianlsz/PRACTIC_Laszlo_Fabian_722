@@ -36,9 +36,9 @@ public class ConsoleView {
                 case "1":
                     uiShowStatistics();
                     break;
-//                case "2":
-//                    uiFilterByDistrict();
-//                    break;
+                case "2":
+                    uiFilterByDistrict();
+                    break;
 //                case "3":
 //                    uiShowSortedTributes();
 //                    break;
@@ -74,5 +74,22 @@ public class ConsoleView {
         service.getAllTributes().forEach(System.out::println);
     }
 
+    private void uiFilterByDistrict() {
+        try {
+            System.out.print("\nEnter District ID to filter: ");
+            int districtId = Integer.parseInt(scanner.nextLine());
+
+            System.out.println("Results for District " + districtId + " (Status: ALIVE):");
+            List<Tribut> filtered = service.filterTributes(districtId);
+
+            if (filtered.isEmpty()) {
+                System.out.println("No ALIVE tributes found in this district.");
+            } else {
+                filtered.forEach(System.out::println);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input! Please enter a valid number.");
+        }
+    }
 
 }

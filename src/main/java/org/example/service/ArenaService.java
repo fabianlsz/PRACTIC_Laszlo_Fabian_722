@@ -22,7 +22,7 @@ public class ArenaService {
         this.giftRepo = giftRepo;
     }
 
-    //cerinta 1 statistici
+    // cerinta 1  statistici
     public List<Tribut> getAllTributes() {
         return tributeRepo.findAll();
     }
@@ -35,5 +35,11 @@ public class ArenaService {
         return giftRepo.findAll().size();
     }
 
+    // filtrare district si status
+    public List<Tribut> filterTributes(int district) {
+        return tributeRepo.findAll().stream()
+                .filter(t -> t.getDistrict() == district && t.getStatus() == Status.ALIVE)
+                .collect(Collectors.toList());
+    }
 
 }
