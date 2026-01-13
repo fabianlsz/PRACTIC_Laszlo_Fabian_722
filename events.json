@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "tributId": 1,
+    "type": "FOUND_SUPPLIES",
+    "points": 10,
+    "day": 1
+  },
+  {
+    "id": 2,
+    "tributId": 1,
+    "type": "INJURED",
+    "points": -5,
+    "day": 2
+  },
+  {
+    "id": 3,
+    "tributId": 9,
+    "type": "ATTACK",
+    "points": 15,
+    "day": 1
+  },
+  {
+    "id": 4,
+    "tributId": 10,
+    "type": "HELPED_ALLY",
+    "points": 8,
+    "day": 2
+  },
+  {
+    "id": 5,
+    "tributId": 5,
+    "type": "FOUND_SUPPLIES",
+    "points": 12,
+    "day": 1
+  },
+  {
+    "id": 6,
+    "tributId": 2,
+    "type": "ATTACK",
+    "points": 14,
+    "day": 2
+  },
+  {
+    "id": 7,
+    "tributId": 11,
+    "type": "SPONSORED",
+    "points": 10,
+    "day": 1
+  },
+  {
+    "id": 8,
+    "tributId": 15,
+    "type": "HELPED_ALLY",
+    "points": 6,
+    "day": 3
+  },
+  {
+    "id": 9,
+    "tributId": 12,
+    "type": "INJURED",
+    "points": -4,
+    "day": 2
+  },
+  {
+    "id": 10,
+    "tributId": 11,
+    "type": "ATTACK",
+    "points": 16,
+    "day": 3
+  },
+  {
+    "id": 11,
+    "tributId": 2,
+    "type": "FOUND_SUPPLIES",
+    "points": 9,
+    "day": 1
+  }
+]

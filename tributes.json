@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Katniss Everdeen",
+    "district": 12,
+    "status": "ALIVE",
+    "skillLevel": 9
+  },
+  {
+    "id": 2,
+    "name": "Johanna Mason",
+    "district": 7,
+    "status": "ALIVE",
+    "skillLevel": 8
+  },
+  {
+    "id": 3,
+    "name": "Foxface",
+    "district": 5,
+    "status": "DEAD",
+    "skillLevel": 7
+  },
+  {
+    "id": 4,
+    "name": "Clove",
+    "district": 2,
+    "status": "DEAD",
+    "skillLevel": 6
+  },
+  {
+    "id": 5,
+    "name": "Thresh",
+    "district": 11,
+    "status": "ALIVE",
+    "skillLevel": 8
+  },
+  {
+    "id": 6,
+    "name": "Rue",
+    "district": 11,
+    "status": "DEAD",
+    "skillLevel": 5
+  },
+  {
+    "id": 7,
+    "name": "Glimmer",
+    "district": 1,
+    "status": "DEAD",
+    "skillLevel": 6
+  },
+  {
+    "id": 8,
+    "name": "Marvel",
+    "district": 1,
+    "status": "DEAD",
+    "skillLevel": 7
+  },
+  {
+    "id": 9,
+    "name": "Cato",
+    "district": 2,
+    "status": "ALIVE",
+    "skillLevel": 8
+  },
+  {
+    "id": 10,
+    "name": "Peeta Mellark",
+    "district": 12,
+    "status": "ALIVE",
+    "skillLevel": 7
+  },
+  {
+    "id": 11,
+    "name": "Finnick Odair",
+    "district": 4,
+    "status": "ALIVE",
+    "skillLevel": 9
+  },
+  {
+    "id": 12,
+    "name": "Annie Cresta",
+    "district": 4,
+    "status": "ALIVE",
+    "skillLevel": 6
+  },
+  {
+    "id": 13,
+    "name": "Brutus",
+    "district": 2,
+    "status": "DEAD",
+    "skillLevel": 8
+  },
+  {
+    "id": 14,
+    "name": "Wiress",
+    "district": 3,
+    "status": "DEAD",
+    "skillLevel": 6
+  },
+  {
+    "id": 15,
+    "name": "Beetee",
+    "district": 3,
+    "status": "ALIVE",
+    "skillLevel": 7
+  }
+]

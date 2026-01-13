@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "tributId": 1,
+    "itemName": "Bow",
+    "value": 30,
+    "day": 1
+  },
+  {
+    "id": 2,
+    "tributId": 10,
+    "itemName": "Medicine",
+    "value": 5,
+    "day": 2
+  },
+  {
+    "id": 3,
+    "tributId": 9,
+    "itemName": "Sword",
+    "value": 20,
+    "day": 1
+  },
+  {
+    "id": 4,
+    "tributId": 11,
+    "itemName": "Trident",
+    "value": 25,
+    "day": 1
+  },
+  {
+    "id": 5,
+    "tributId": 2,
+    "itemName": "Axe",
+    "value": 18,
+    "day": 2
+  },
+  {
+    "id": 6,
+    "tributId": 15,
+    "itemName": "WireTrap",
+    "value": 10,
+    "day": 2
+  },
+  {
+    "id": 7,
+    "tributId": 5,
+    "itemName": "Bread",
+    "value": 7,
+    "day": 1
+  },
+  {
+    "id": 8,
+    "tributId": 12,
+    "itemName": "Water",
+    "value": 6,
+    "day": 2
+  }
+]
