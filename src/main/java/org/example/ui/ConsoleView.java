@@ -48,9 +48,9 @@ public class ConsoleView {
                 case "5":
                     uiShowComputedPoints();
                     break;
-//                case "6":
-//                    uiShowRanking();
-//                    break;
+                case "6":
+                    uiShowRanking();
+                    break;
 //                case "7":
 //                    uiGenerateReport();
 //                    break;
@@ -113,6 +113,14 @@ public class ConsoleView {
         }
     }
 
-
+    private void uiShowRanking() {
+        System.out.println("\n--- Top 5 Ranking ---");
+        var ranking = service.getTop5Ranking();
+        int rank = 1;
+        for (var entry : ranking) {
+            System.out.println(rank + ". " + entry.getKey().getName() + " -> " + entry.getValue() + " points");
+            rank++;
+        }
+    }
 
 }
