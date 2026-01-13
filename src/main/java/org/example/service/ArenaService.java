@@ -49,4 +49,17 @@ public class ArenaService {
                         .thenComparing(Tribut::getName))
                 .collect(Collectors.toList());
     }
+
+    //cerinta 4 salvarea sortarii in fisier tributes_sorted.json
+    public void saveSortedTributes() {
+        List<Tribut> sorted = getSortedTributes();
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("tributes_sorted.txt"))) {
+            for (Tribut t : sorted) {
+                writer.write(t.toString());
+                writer.newLine();
+            }
+        } catch (IOException e) {
+            System.err.println("Eroare la scrierea fisierului tributes_sorted.txt: " + e.getMessage());
+        }
+    }
 }

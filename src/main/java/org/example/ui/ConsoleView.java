@@ -42,9 +42,9 @@ public class ConsoleView {
                 case "3":
                     uiShowSortedTributes();
                     break;
-//                case "4":
-//                    uiSaveSortedToFile();
-//                    break;
+                case "4":
+                    uiSaveSortedToFile();
+                    break;
 //                case "5":
 //                    uiShowComputedPoints();
 //                    break;
@@ -97,4 +97,9 @@ public class ConsoleView {
         service.getSortedTributes().forEach(System.out::println);
     }
 
+    private void uiSaveSortedToFile() {
+        System.out.println("\n--- Saving to File ---");
+        service.saveSortedTributes();
+        System.out.println("Success! Tributes saved to 'tributes_sorted.txt'.");
+    }
 }
